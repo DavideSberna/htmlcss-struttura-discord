@@ -3,7 +3,10 @@
     --footer-color: #23272a;
     --body-color-row: #f6f6f6;
     --button-color: #5865f2;
-    --white-color: #ffffff
+    --white-color: #ffffff;
+
+    --hover-color-black: #36393f;
+    --hover-color-blue: #7983f5;
 }
 
 
@@ -15,34 +18,46 @@
     font-family: 'Noto Sans', sans-serif;;
 }
 
-
-
+.debug{
+    border: solid 1px black;
+}
 .menu-items{
     list-style: none;
 }
-.menu-items li{
+header li{
     padding: 0 20px 0 20px;
-    font-size: 1.1em;  
+    font-size: 1.1em; 
+     
+}
+
+li a{
+    color: var(--white-color);
+    text-decoration: none;
+    font-size: 1.1em;   
 }
 .a-button, .a-button-black{
-    color: black;
+    color: var(--footer-color);
     text-decoration: none;
     background-color: var(--white-color);
     border-radius: 30px;
     margin: 0 20px 0 20px;
     padding: 12px 18px 12px 18px;
     font-size: 1.1em;  
+    transition: all 0.3s ease 0s;
     
 }
 .a-button-black{
     background-color: var(--footer-color);
     color: var(--white-color);
     margin-left: 10px;
-    width: 10px;
 }
 .gray-section{
     background-color: var(--body-color-row) ;
 }
+
+
+
+
 
 
 
@@ -52,9 +67,7 @@
 .padding-items{
     padding-top: 30px;
 }
-.debug{
-    border: solid 1px black;
-}
+
 .page-center{
     max-width: 1400px;
     margin: 0 auto;
@@ -62,18 +75,7 @@
 .section-menu{
     background-color: var(--header-color);
     color: var(--white-color);
-    min-width: 700px;
-}
-.img-main{
-    width: 75%;
-    height: auto;  
-}
-.text-container-main{
-    padding-right: 10%;
-}
-.margin-section{
-    margin-top: 60px;
-    margin-bottom: 30px;
+    
 }
 
 
@@ -96,22 +98,17 @@
     display: flex;
     justify-content: center;   
 }
-.d-flex-row-start{
-    display: flex;
-    justify-content: flex-start;   
-}
+
 .flex-row-wrap{
     display: flex;
     flex-flow: row wrap;
-}
-.flex-row-nowrap{
-    display: flex;
-    flex-flow: row nowrap;
 }
 .flex-row-reverse{
     display: flex;
     flex-flow: row-reverse;
 }
+
+
 
 
 
@@ -127,14 +124,14 @@
 .title-header{
     width: 60%;
     margin: 0 auto;
-    height: 730px;
+    min-height: 730px;
     color: var(--white-color);
 }
 .title-header div{
     padding-bottom: 30px;   
 }
 .title-header h1{
-    font-size: 50px;
+    font-size: 3.5em; 
     margin-bottom: 30px;   
 }
 .title-header p{
@@ -144,9 +141,11 @@
 }
 .section-backgroud{
     background-image: url("../img/jumbo.png");
-    background-size: cover;
     background-repeat: no-repeat;
-    background-position: 0 -125px;
-    
+    background-position: center; 
+    background-size: cover; 
+}
+.content{
+    max-width: 700px;
 }
 
